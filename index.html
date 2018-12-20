@@ -10,6 +10,11 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+body{
+	background-color: #00cccc;
+}
+
 .row {
   width: 100%;
 }
@@ -70,6 +75,7 @@ p{
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 40px;
+	line-height: 25px;
 }
 /********** Large devices only **********/
 @media (min-width: 992px) {
@@ -86,7 +92,7 @@ p{
     width: 25%;
   }
   .col-lg-4 {
-    width: 28%;
+    width: 33.33%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -135,7 +141,7 @@ p{
     width: 41.66%;
   }
   .col-md-6 {
-    width: 44%;
+    width: 50%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -153,7 +159,7 @@ p{
     width: 91.66%;
   }
   .col-md-12 {
-    width: 92%;
+    width: 100%;
   }
   /********** Small devices only **********/
 @media (max-width: 767px) {
@@ -202,23 +208,29 @@ p{
 <body>
 	<h1>Our Menu</h1>
 	<section class="row">
-		<div id="container1" class="detail col-lg-4 col-md-6 col-sm-12">
-		  <div class="subtitle">
-		  	<h2 id="sub1">Chicken</h2>
-		  </div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+		  <div id="container1" class="detail">
+		  	<div class="subtitle">
+		  		<h2 id="sub1">Chicken</h2>
+		  	</div>
 			<p>Season the chicken breasts on both sides with salt, pepper and the Italian seasoning. Heat the olive oil in a large pan over medium high heat. Add the chicken breasts and cook for 3-5 minutes on each side or until browned. In a small bowl, mix together the butter, garlic, chicken broth and lemon juice.</p>
+		  </div>
 		</div>
-		<div id="container2" class="detail col-lg-4 col-md-6 col-sm-12">
-		 <div class="subtitle">
-		 	<h2 id="sub2">Beef</h2>
-		 </div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+		  <div id="container2" class="detail">
+		 	<div class="subtitle">
+		 		<h2 id="sub2">Beef</h2>
+		 	</div>
 			<p>Beef stew, beef stroganoff, slow cooker pot roast: find the best beef recipes, including hundreds of ways to cook ground beef for tonight's dinner.</p>
+		  </div>
 		</div>
-		<div id="container3" class="detail col-lg-4 col-md-12 col-sm-12">
-		  <div class="subtitle">
-		  	<h2 id="sub3">Sushi</h2>
-	      </div>
+		<div class="col-lg-4 col-md-12 col-sm-12">
+		  <div id="container3" class="detail">	
+		  	<div class="subtitle">
+		  		<h2 id="sub3">Sushi</h2>
+	      	</div>
 			<p>Mix the rice vinegar and sugar in a small bowl until the sugar has dissolved, and stir the mixture into the cooked rice until well combined. Allow the rice to cool, and set aside. Mix the imitation crabmeat with mayonnaise in a bowl, and set aside. To roll the sushi, cover a bamboo rolling mat with plastic wrap.</p>
+		  </div>
 		</div>
 	</section>
 </body>
