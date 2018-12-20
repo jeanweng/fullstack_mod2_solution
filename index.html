@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment Solution for module 2</title>
+<style>
+	/* Simple Responsive Framework. */
+*{
+	box-sizing: border-box;	
+	margin: 0px;
+	padding: 0px;
+}
+.row {
+  width: 100%;
+}
 
+h1{
+	font-family: fantasy; 
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.detail{
+	border: 1px solid black;
+	background-color: #ffe6b3;
+	padding: 5px;
+	margin: 20px;
+	height: 200px;
+	overflow: auto;
+}
+
+div#container1{
+	position: relative;
+}
+div#container2{
+	position: relative;
+}
+div#container3{
+	position: relative;
+}
+
+h2 {
+	font-family: fantasy;
+	font-size: 20px;
+	width:120px;
+	height: 32px;
+	text-align: center;
+	padding-top: 5px;
+	border: 1px solid black;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-top: 0px;
+}
+
+#sub1{
+	background-color: #ff9999;
+}
+#sub2{
+	background-color: #ff3300;
+}
+#sub3{
+	background-color: #ffcc00;
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 40px;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 28%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 44%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 92%;
+  }
+  /********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<section class="row">
+		<div id="container1" class="detail col-lg-4 col-md-6 col-sm-12">
+		  <div class="subtitle">
+		  	<h2 id="sub1">Chicken</h2>
+		  </div>
+			<p>Season the chicken breasts on both sides with salt, pepper and the Italian seasoning. Heat the olive oil in a large pan over medium high heat. Add the chicken breasts and cook for 3-5 minutes on each side or until browned. In a small bowl, mix together the butter, garlic, chicken broth and lemon juice.</p>
+		</div>
+		<div id="container2" class="detail col-lg-4 col-md-6 col-sm-12">
+		 <div class="subtitle">
+		 	<h2 id="sub2">Beef</h2>
+		 </div>
+			<p>Beef stew, beef stroganoff, slow cooker pot roast: find the best beef recipes, including hundreds of ways to cook ground beef for tonight's dinner.</p>
+		</div>
+		<div id="container3" class="detail col-lg-4 col-md-12 col-sm-12">
+		  <div class="subtitle">
+		  	<h2 id="sub3">Sushi</h2>
+	      </div>
+			<p>Mix the rice vinegar and sugar in a small bowl until the sugar has dissolved, and stir the mixture into the cooked rice until well combined. Allow the rice to cool, and set aside. Mix the imitation crabmeat with mayonnaise in a bowl, and set aside. To roll the sushi, cover a bamboo rolling mat with plastic wrap.</p>
+		</div>
+	</section>
+</body>
+</html>
